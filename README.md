@@ -13,12 +13,19 @@ apt install wget -y
 bash <(wget --no-check-certificate -qO- http://uee.me/dbhvv)
 ```
 3.创建用户以安装Clash
+
 4.创建用户密码
+
 5.输入本机IP（因为是将Debian系统作为旁路网关，所以必须跟主路由同一网段）
-6.输入网关（主路由IP）
+
+6.输入网关（主路由IP
+）
 7.输入DNS（这个无所谓，找个最快的就可以了）
+
 ### 8.输入托管链接（当前只支持墙洞的Clash托管，必备参数&dns=1）
+
 9.等候脚本自动执行，期间会安装一个iptables-persistent，都选“是”。
+
 10.安装完成，按照提示配置设备就可以了
 
 ###### 3.一些操作指令
