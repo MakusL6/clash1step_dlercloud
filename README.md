@@ -1,7 +1,7 @@
 # Clash for Linux一键安装脚本(支持订阅)
-#### 参照油管UP主：米月大佬的灯塔脚本修改的一键安装Clash For Linux。加入了一下功能：
-###### 1.支持创建非root用户，以供安装Clash（是新建，不是使用）
-###### 2.支持机场托管订阅（目前仅测试墙洞）
+## 参照油管UP主：米月大佬的灯塔脚本修改的一键安装Clash For Linux。加入了一下功能：
+### 支持创建非root用户，以供安装Clash（是新建，不是使用）
+### 支持机场托管订阅（目前仅测试墙洞）
 
 # 脚本大致使用步骤如下：
 1.root用户登录，安装wget组件
@@ -28,7 +28,7 @@ bash <(wget --no-check-certificate -qO- http://uee.me/dbhvv)
 
 10.安装完成，按照提示配置设备就可以了
 
-###### 3.一些操作指令
+### 一些操作指令
 启动Clash
 ```
 sudo systemctl start clash.service
