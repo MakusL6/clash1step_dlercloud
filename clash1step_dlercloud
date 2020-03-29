@@ -19,10 +19,6 @@ while [[ -z ${gate_ip} ]]; do
     gate_ip=$(whiptail --inputbox --nocancel "输入网关IP（主路由IP）" 8 78 --title "网关IP" 3>&1 1>&2 2>&3)
 done
 
-while [[ -z ${dns} ]]; do
-    dns=$(whiptail --inputbox --nocancel "输入dns（随你喜欢）" 8 78 --title "dns" 3>&1 1>&2 2>&3)
-done
-
 while [[ -z ${config} ]]; do
     config=$(whiptail --inputbox --nocancel "输入链接（仅测试墙洞，需带有DNS配置）" 8 78 --title "Clash托管连接" 3>&1 1>&2 2>&3)
 done
@@ -234,7 +230,7 @@ iface $eth_n inet static
   address $loc_ip
   netmask 255.255.255.0
   gateway $gate_ip
-  dns-nameservers $dns
+  dns-nameservers $gate_ip
 EOF
 
 echo "14******************************************************************"
